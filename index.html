@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SOJOTEX S.A.C. — Taller de Confección de Alta Capacidad</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700;900&amp;family=Lora:ital,wght@0,400;0,600;1,400&amp;family=Barlow:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- ─── NAVBAR ─── -->
+<nav>
+  <div class="logo-wrap">
+    <!-- SOJOTEX SVG Logo -->
+    <svg viewBox="0 0 260 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <text x="0" y="50" font-family="'Barlow Condensed', sans-serif" font-weight="800"
+            font-size="52" letter-spacing="2" fill="#f2ede3">SOJOTE</text>
+      <!-- Weave icon -->
+      <g transform="translate(212,8)">
+        <rect x="0"  y="0"  width="11" height="11" fill="#a8944f" opacity=".9" transform="rotate(-45 5.5 5.5)"/>
+        <rect x="14" y="0"  width="11" height="11" fill="#7a8e96" opacity=".9" transform="rotate(-45 19.5 5.5)"/>
+        <rect x="7"  y="12" width="11" height="11" fill="#256068" opacity=".9" transform="rotate(-45 12.5 17.5)"/>
+        <rect x="21" y="12" width="11" height="11" fill="#a8944f" opacity=".7" transform="rotate(-45 26.5 17.5)"/>
+        <!-- Overlapping lines (weave effect) -->
+        <line x1="5" y1="0" x2="28" y2="23" stroke="#f2ede3" stroke-width="1" opacity=".2"/>
+        <line x1="28" y1="0" x2="5" y2="23" stroke="#f2ede3" stroke-width="1" opacity=".2"/>
+      </g>
+    </svg>
+  </div>
+  <ul>
+    <li><a href="#sobre">Nosotros</a></li>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#clientes">Clientes</a></li>
+    <li><a href="#exportacion">Exportación</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+  <a href="#contacto" class="cta-nav">Solicitar cotización</a>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section id="hero">
+  <div class="hero-left">
+    <div class="hero-tag"><span></span>Confección Textil Peruana</div>
+    <h1>Alta<br/>capacidad<br/><em>productiva</em></h1>
+    <p class="hero-desc">
+      Taller de confección con experiencia en producciones nacionales
+      y de exportación. Corte, confección, acabado y empaquetado
+      bajo los más altos estándares de calidad.
+    </p>
+    <div class="hero-btns">
+      <a href="#servicios" class="btn-primary">Ver servicios</a>
+      <a href="#contacto" class="btn-outline">Cotizar ahora</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-visual">
+      <!-- Large weave SVG decorative -->
+      <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;opacity:.18">
+        <defs>
+          <pattern id="wp" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+            <rect x="0" y="0" width="19" height="19" fill="none" stroke="#c9b87a" stroke-width="1"/>
+            <rect x="21" y="21" width="19" height="19" fill="none" stroke="#7a8e96" stroke-width="1"/>
+            <line x1="0" y1="0" x2="40" y2="40" stroke="#fff" stroke-width=".5" opacity=".4"/>
+          </pattern>
+        </defs>
+        <rect width="400" height="400" fill="url(#wp)"/>
+        <!-- Central weave motif -->
+        <g transform="translate(200,200)">
+          <polygon points="0,-80 80,0 0,80 -80,0" fill="none" stroke="#c9b87a" stroke-width="1.5" opacity=".7"/>
+          <polygon points="0,-55 55,0 0,55 -55,0" fill="none" stroke="#7a8e96" stroke-width="1" opacity=".5"/>
+          <polygon points="0,-30 30,0 0,30 -30,0" fill="none" stroke="#c9b87a" stroke-width="1" opacity=".4"/>
+          <line x1="-80" y1="0" x2="80" y2="0" stroke="#fff" stroke-width=".8" opacity=".3"/>
+          <line x1="0" y1="-80" x2="0" y2="80" stroke="#fff" stroke-width=".8" opacity=".3"/>
+          <circle r="6" fill="#c9b87a" opacity=".8"/>
+          <circle r="3" fill="#fff" opacity=".6"/>
+        </g>
+      </svg>
+      <!-- Logo large centered -->
+      <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1.2rem;">
+        <svg viewBox="0 0 320 80" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:280px;">
+          <text x="0" y="60" font-family="'Barlow Condensed', sans-serif" font-weight="900"
+                font-size="64" letter-spacing="2" fill="white" opacity=".9">SOJOTE</text>
+          <g transform="translate(263,10)">
+            <rect x="0"  y="0"  width="14" height="14" fill="#a8944f" transform="rotate(-45 7 7)"/>
+            <rect x="18" y="0"  width="14" height="14" fill="#7a8e96" transform="rotate(-45 25 7)"/>
+            <rect x="9"  y="15" width="14" height="14" fill="#256068" transform="rotate(-45 16 22)"/>
+            <rect x="27" y="15" width="14" height="14" fill="#a8944f" opacity=".7" transform="rotate(-45 34 22)"/>
+          </g>
+        </svg>
+        <p style="font-family:'Barlow Condensed',sans-serif;font-size:.82rem;letter-spacing:.3em;text-transform:uppercase;color:rgba(255,255,255,.4);">S.A.C. — Lima, Perú</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats bar -->
+  <div class="hero-stat-bar">
+    <div class="hero-stat">
+      <span class="num" data-target="47">0</span>
+      <span class="label">Máquinas industriales</span>
+    </div>
+    <div class="hero-stat">
+      <span class="num" data-target="3" data-suffix="+">0</span>
+      <span class="label">Países de exportación</span>
+    </div>
+    <div class="hero-stat">
+      <span class="num" data-target="15" data-suffix="+">0</span>
+      <span class="label">Clientes corporativos</span>
+    </div>
+    <div class="hero-stat">
+      <span class="num" data-target="100" data-suffix="%">0</span>
+      <span class="label">Servicio integral</span>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ABOUT ─── -->
+<section id="sobre">
+  <div class="about-text reveal">
+    <div class="section-tag">Quiénes somos</div>
+    <h2>Fabricación textil<br/>con experiencia<br/>comprobada</h2>
+    <p>
+      SOJOTEX S.A.C. es un taller de confección de alta capacidad productiva, 
+      especializado en prendas de vestir e indumentaria de trabajo para empresas 
+      privadas y públicas.
+    </p>
+    <p>
+      Contamos con profesionales de amplia experiencia en el rubro textil, 
+      comprometidos con los más altos estándares de calidad que exigen nuestros clientes.
+      Realizamos un servicio integral que incluye corte, confección, acabado y empaquetado.
+    </p>
+    <p>
+      Nuestra trayectoria como proveedores de empresas líderes como Topy Top, Cotton Knit 
+      e Industrias Nettalco, así como de instituciones del Estado peruano, respalda nuestra 
+      capacidad y confiabilidad.
+    </p>
+  </div>
+  <div class="about-visual reveal reveal-delay-2">
+    <div class="machine-grid">
+      <div class="mg-cell" tabindex="0">
+        <span class="mg-num">14</span>
+        <span class="mg-label">Rectas<br/>automáticas</span>
+        <div class="machine-tooltip">
+          <div class="tt-title">Recta automática</div>
+          <div class="tt-body">Costura de unión principal en prendas. Alta velocidad y precisión de puntada. Base del ensamble industrial.</div>
+          <div class="tt-uses">
+            <span class="tt-tag">Camisas</span>
+            <span class="tt-tag">Pantalones</span>
+            <span class="tt-tag">Uniformes</span>
+          </div>
+        </div>
+      </div>
+      <div class="mg-cell" tabindex="0">
+        <span class="mg-num">16</span>
+        <span class="mg-label">Remalladores<br/>melliseras</span>
+        <div class="machine-tooltip">
+          <div class="tt-title">Remalladora mellisera</div>
+          <div class="tt-body">Cierra y remata bordes de tela simultáneamente. Acabado profesional que evita deshilachado.</div>
+          <div class="tt-uses">
+            <span class="tt-tag">Polos</span>
+            <span class="tt-tag">Buzos</span>
+            <span class="tt-tag">Ropa interior</span>
+          </div>
+        </div>
+      </div>
+      <div class="mg-cell" tabindex="0">
+        <span class="mg-num">5</span>
+        <span class="mg-label">Basteras<br/>cañoneras</span>
+        <div class="machine-tooltip">
+          <div class="tt-title">Bastera cañonera automática</div>
+          <div class="tt-body">Dobladillo de precisión en bordes inferiores. Acabado recto y uniforme a alta velocidad.</div>
+          <div class="tt-uses">
+            <span class="tt-tag">Dobladillos</span>
+            <span class="tt-tag">Ruedos</span>
+            <span class="tt-tag">Pretinas</span>
+          </div>
+        </div>
+      </div>
+      <div class="mg-cell" tabindex="0">
+        <span class="mg-num">8</span>
+        <span class="mg-label">Recubridoras<br/>mec./aut.</span>
+        <div class="machine-tooltip">
+          <div class="tt-title">Recubridora</div>
+          <div class="tt-body">Costura de cobertura elástica para prendas deportivas e institucionales. Acabado plano y resistente.</div>
+          <div class="tt-uses">
+            <span class="tt-tag">Deportiva</span>
+            <span class="tt-tag">Cuello / puño</span>
+            <span class="tt-tag">Activo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SERVICES ─── -->
+<section id="servicios">
+  <div class="services-header reveal">
+    <div class="section-tag">Lo que hacemos</div>
+    <h2>Nuestros<br/>servicios</h2>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal reveal-delay-1">
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h12"/><circle cx="19" cy="18" r="2"/></svg>
+      </div>
+      <h3>Servicio de<br/>Confección</h3>
+      <p>
+        Producción de prendas de vestir e indumentaria de trabajo con corte, 
+        ensamble y terminado de alta precisión. Adaptamos cada producción 
+        a las especificaciones técnicas del cliente.
+      </p>
+    </div>
+    <div class="service-card reveal reveal-delay-2">
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="1"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+      </div>
+      <h3>Acabado y<br/>Packing Final</h3>
+      <p>
+        Proceso completo de acabado, revisión de calidad, etiquetado y 
+        empaquetado según los requerimientos de cada cliente nacional 
+        o de exportación.
+      </p>
+    </div>
+    <div class="service-card reveal reveal-delay-3">
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+      </div>
+      <h3>Licitaciones<br/>Estatales</h3>
+      <p>
+        Experiencia probada en procesos de contratación con el Estado peruano. 
+        Proveemos a ministerios, organismos públicos y gobiernos regionales 
+        con indumentaria institucional de calidad.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PROCESS TIMELINE ─── -->
+<section id="proceso">
+  <div class="proceso-header reveal">
+    <div class="section-tag">Cómo trabajamos</div>
+    <h2>Proceso<br/>productivo</h2>
+  </div>
+  <div class="timeline-steps reveal">
+    <div class="tl-step active" data-step="0">
+      <div class="tl-dot">
+        <span class="tl-step-num">1</span>
+        <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+      </div>
+      <span class="tl-step-title">Recepción<br/>de ficha</span>
+    </div>
+    <div class="tl-step" data-step="1">
+      <div class="tl-dot">
+        <span class="tl-step-num">2</span>
+        <svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+      </div>
+      <span class="tl-step-title">Corte</span>
+    </div>
+    <div class="tl-step" data-step="2">
+      <div class="tl-dot">
+        <span class="tl-step-num">3</span>
+        <svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg>
+      </div>
+      <span class="tl-step-title">Confección</span>
+    </div>
+    <div class="tl-step" data-step="3">
+      <div class="tl-dot">
+        <span class="tl-step-num">4</span>
+        <svg viewBox="0 0 24 24"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+      </div>
+      <span class="tl-step-title">Acabado<br/>y control</span>
+    </div>
+    <div class="tl-step" data-step="4">
+      <div class="tl-dot">
+        <span class="tl-step-num">5</span>
+        <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+      </div>
+      <span class="tl-step-title">Packing y<br/>despacho</span>
+    </div>
+  </div>
+
+  <!-- Info panel -->
+  <div class="tl-panel reveal reveal-delay-1" id="tlPanel">
+    <div class="tl-panel-content">
+      <div class="tl-panel-label" id="tlLabel">Paso 1 de 5</div>
+      <div class="tl-panel-title" id="tlTitle">Recepción de ficha técnica</div>
+      <div class="tl-panel-desc" id="tlDesc">Recibimos la ficha técnica del cliente con especificaciones de diseño, telas, colores y tallas. Nuestro equipo técnico valida los requerimientos y confirma tiempos de producción.</div>
+      <div class="tl-machines" id="tlMachines"></div>
+    </div>
+    <div class="tl-panel-side">
+      <div class="tl-time">
+        <span class="t-num" id="tlTime">1</span>
+        <span class="t-unit" id="tlUnit">día</span>
+      </div>
+      <div class="tl-progress">
+        <div class="tl-progress-bar"><div class="tl-progress-fill" id="tlProgressFill" style="width:20%"></div></div>
+        <div class="tl-progress-label">Progreso del proceso</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CLIENTS ─── -->
+<section id="clientes">
+  <div class="section-tag reveal">Nuestros clientes</div>
+  <h2 class="reveal">Respaldo de marcas líderes</h2>
+  <p class="clients-sub reveal">
+    Somos proveedores de empresas reconocidas con estándares altos en calidad 
+    e instituciones del Estado peruano.
+  </p>
+  <div class="clients-marquee">
+    <div class="clients-track" id="marqueeTrack">
+      <!-- duplicated for seamless loop -->
+      <span class="client-pill">Topy Top S.A.</span>
+      <span class="client-pill">Cotton Knit S.A.C.</span>
+      <span class="client-pill">Industrias Nettalco</span>
+      <span class="client-pill">Alianza Color S.A.C.</span>
+      <span class="client-pill">Precotex S.A.C.</span>
+      <span class="client-pill">Samitex S.A.</span>
+      <span class="client-pill">El Modelador S.A.</span>
+      <span class="client-pill">ESSALUD</span>
+      <span class="client-pill">Min. de Educación</span>
+      <span class="client-pill">Min. de Salud</span>
+      <span class="client-pill">Contraloría General</span>
+      <span class="client-pill">Sup. de Migraciones</span>
+      <span class="client-pill">Gobierno Regional Lima</span>
+      <span class="client-pill">RYM Fumymser</span>
+      <!-- repeat -->
+      <span class="client-pill">Topy Top S.A.</span>
+      <span class="client-pill">Cotton Knit S.A.C.</span>
+      <span class="client-pill">Industrias Nettalco</span>
+      <span class="client-pill">Alianza Color S.A.C.</span>
+      <span class="client-pill">Precotex S.A.C.</span>
+      <span class="client-pill">Samitex S.A.</span>
+      <span class="client-pill">El Modelador S.A.</span>
+      <span class="client-pill">ESSALUD</span>
+      <span class="client-pill">Min. de Educación</span>
+      <span class="client-pill">Min. de Salud</span>
+      <span class="client-pill">Contraloría General</span>
+      <span class="client-pill">Sup. de Migraciones</span>
+      <span class="client-pill">Gobierno Regional Lima</span>
+      <span class="client-pill">RYM Fumymser</span>
+    </div>
+  </div>
+</section>
+
+<!-- ─── EXPORTATION ─── -->
+<section id="exportacion">
+  <div class="reveal">
+    <div class="section-tag">Alcance internacional</div>
+    <h2>Exportación a<br/>tres continentes</h2>
+    <p style="font-size:1.05rem;line-height:1.8;color:#3a4a4e;max-width:460px;margin-top:1rem;">
+      Nuestras prendas llegan a clientes del extranjero con los más altos 
+      estándares de calidad. Gestionamos la producción, el acabado y el 
+      empaque para exportación bajo los requerimientos de cada mercado.
+    </p>
+    <div class="export-countries">
+      <div class="country-badge">
+        <span class="country-flag">🇨🇦</span>
+        <span>Canadá</span>
+      </div>
+      <div class="country-badge">
+        <span class="country-flag">🇲🇽</span>
+        <span>México</span>
+      </div>
+      <div class="country-badge">
+        <span class="country-flag">🇧🇷</span>
+        <span>Brasil</span>
+      </div>
+      <div class="country-badge">
+        <span class="country-flag">🇺🇸</span>
+        <span>EE.UU.</span>
+      </div>
+    </div>
+  </div>
+  <div class="export-map reveal reveal-delay-2">
+    <!-- Simplified world map paths -->
+    <svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+      <rect width="800" height="450" fill="#e8e2d8" rx="6"/>
+      <!-- Very simplified continents -->
+      <!-- North America -->
+      <path d="M100,60 L190,50 L230,80 L260,130 L250,190 L220,230 L190,240 L160,210 L130,180 L110,140 L90,100 Z" fill="#c4bba8" stroke="#b0a590" stroke-width="1"/>
+      <!-- Central / South America -->
+      <path d="M180,240 L210,250 L220,280 L215,330 L200,380 L185,390 L170,360 L165,310 L168,270 Z" fill="#c4bba8" stroke="#b0a590" stroke-width="1"/>
+      <!-- Europe -->
+      <path d="M370,55 L420,48 L440,65 L445,95 L420,110 L390,105 L370,90 Z" fill="#c4bba8" stroke="#b0a590" stroke-width="1"/>
+      <!-- Africa -->
+      <path d="M390,115 L440,108 L460,140 L465,200 L450,250 L430,280 L405,285 L385,260 L375,210 L375,160 Z" fill="#c4bba8" stroke="#b0a590" stroke-width="1"/>
+      <!-- Asia -->
+      <path d="M450,40 L600,35 L650,60 L660,120 L620,150 L560,160 L500,150 L460,130 L445,95 L450,65 Z" fill="#c4bba8" stroke="#b0a590" stroke-width="1"/>
+      <!-- Oceania -->
+      <path d="M600,230 L660,225 L680,260 L670,295 L640,300 L610,280 L598,255 Z" fill="#c4bba8" stroke="#b0a590" stroke-width="1"/>
+
+      <!-- Peru marker (home) -->
+      <g transform="translate(178,285)">
+        <circle r="8" fill="#1c4a50"/>
+        <circle r="4" fill="#c9b87a"/>
+        <text y="22" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-size="12" fill="#1c4a50" font-weight="700">Lima, Perú</text>
+      </g>
+
+      <!-- Canada marker -->
+      <g transform="translate(155,80)">
+        <circle r="6" fill="#a8944f" opacity=".9"/>
+        <text y="-10" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-size="11" fill="#555">Canadá</text>
+      </g>
+      <!-- Mexico marker -->
+      <g transform="translate(175,195)">
+        <circle r="6" fill="#a8944f" opacity=".9"/>
+        <text y="-10" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-size="11" fill="#555">México</text>
+      </g>
+      <!-- Brazil marker -->
+      <g transform="translate(215,320)">
+        <circle r="6" fill="#a8944f" opacity=".9"/>
+        <text y="-10" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-size="11" fill="#555">Brasil</text>
+      </g>
+      <!-- USA marker -->
+      <g transform="translate(170,140)">
+        <circle r="6" fill="#a8944f" opacity=".9"/>
+        <text y="-10" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-size="11" fill="#555">EE.UU.</text>
+      </g>
+
+      <!-- Lines from Lima -->
+      <line x1="178" y1="285" x2="155" y2="80" stroke="#1c4a50" stroke-width="1" stroke-dasharray="4,3" opacity=".5"/>
+      <line x1="178" y1="285" x2="175" y2="195" stroke="#1c4a50" stroke-width="1" stroke-dasharray="4,3" opacity=".5"/>
+      <line x1="178" y1="285" x2="215" y2="320" stroke="#1c4a50" stroke-width="1" stroke-dasharray="4,3" opacity=".5"/>
+      <line x1="178" y1="285" x2="170" y2="140" stroke="#1c4a50" stroke-width="1" stroke-dasharray="4,3" opacity=".5"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ─── CONTACT ─── -->
+<section id="contacto">
+  <div class="reveal">
+    <div class="section-tag">Hablemos</div>
+    <h2>Solicita<br/>tu cotización</h2>
+    <div class="contact-info">
+      <div class="contact-item">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 12a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2.02z"/></svg>
+        </div>
+        <div class="contact-item-text">
+          <div class="label">Teléfono</div>
+          <div class="val">977 147 748</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div class="contact-item-text">
+          <div class="label">Correo electrónico</div>
+          <div class="val"><a href="mailto:contacto@sojotex.com">contacto@sojotex.com</a></div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div class="contact-item-text">
+          <div class="label">Ubicación del taller</div>
+          <div class="val">Jr. Las Mercedes 1042, Urb. Zarate<br/>San Juan de Lurigancho, Lima</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="1"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+        </div>
+        <div class="contact-item-text">
+          <div class="label">RUC</div>
+          <div class="val">20614470039</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="reveal reveal-delay-2">
+    <p class="form-label">Formulario de cotización</p>
+
+    <!-- Progress dots -->
+    <div class="pform-progress" id="pformProgress">
+      <div class="pform-dot current"></div>
+      <div class="pform-dot"></div>
+      <div class="pform-dot"></div>
+      <div class="pform-dot"></div>
+    </div>
+
+    <div class="pform-wrapper">
+
+      <!-- Step 1: Service type -->
+      <div class="pform-step active" id="pStep1">
+        <div class="pform-question">
+          <span>Paso 1 de 4 — Servicio</span>
+          ¿Qué necesitas?
+        </div>
+        <div class="pform-options">
+          <div class="pform-opt" data-val="Servicio de confección" data-group="s1">
+            <span class="pform-opt-icon">✂️</span>
+            <span class="pform-opt-label">Confección</span>
+          </div>
+          <div class="pform-opt" data-val="Acabado y packing" data-group="s1">
+            <span class="pform-opt-icon">📦</span>
+            <span class="pform-opt-label">Acabado y packing</span>
+          </div>
+          <div class="pform-opt" data-val="Licitación estatal" data-group="s1">
+            <span class="pform-opt-icon">🏛️</span>
+            <span class="pform-opt-label">Licitación estatal</span>
+          </div>
+          <div class="pform-opt" data-val="Servicio completo" data-group="s1">
+            <span class="pform-opt-icon">🔄</span>
+            <span class="pform-opt-label">Servicio completo</span>
+          </div>
+        </div>
+        <div class="pform-nav">
+          <button class="pform-next" data-next="2">Siguiente →</button>
+        </div>
+      </div>
+
+      <!-- Step 2: Quantity -->
+      <div class="pform-step" id="pStep2">
+        <div class="pform-question">
+          <span>Paso 2 de 4 — Cantidad</span>
+          ¿Cuántas unidades necesitas?
+        </div>
+        <div class="pform-range-val" id="rangeVal">500</div>
+        <input type="range" class="pform-range" id="quantityRange" min="50" max="5000" step="50" value="500" />
+        <div class="pform-range-labels"><span>50 uds.</span><span>5,000 uds.</span></div>
+        <div class="pform-nav" style="margin-top:1.8rem">
+          <button class="pform-next" data-next="3">Siguiente →</button>
+          <button class="pform-back" data-prev="1">← Atrás</button>
+        </div>
+      </div>
+
+      <!-- Step 3: Timeline -->
+      <div class="pform-step" id="pStep3">
+        <div class="pform-question">
+          <span>Paso 3 de 4 — Plazo</span>
+          ¿Cuándo lo necesitas?
+        </div>
+        <div class="pform-options">
+          <div class="pform-opt" data-val="Urgente (1–2 semanas)" data-group="s3">
+            <span class="pform-opt-icon">⚡</span>
+            <span class="pform-opt-label">Urgente<br/><small>1–2 semanas</small></span>
+          </div>
+          <div class="pform-opt" data-val="Normal (3–4 semanas)" data-group="s3">
+            <span class="pform-opt-icon">📅</span>
+            <span class="pform-opt-label">Normal<br/><small>3–4 semanas</small></span>
+          </div>
+          <div class="pform-opt" data-val="Programado (1–2 meses)" data-group="s3">
+            <span class="pform-opt-icon">🗓️</span>
+            <span class="pform-opt-label">Programado<br/><small>1–2 meses</small></span>
+          </div>
+          <div class="pform-opt" data-val="Por confirmar" data-group="s3">
+            <span class="pform-opt-icon">🤔</span>
+            <span class="pform-opt-label">Por confirmar</span>
+          </div>
+        </div>
+        <div class="pform-nav">
+          <button class="pform-next" data-next="4">Siguiente →</button>
+          <button class="pform-back" data-prev="2">← Atrás</button>
+        </div>
+      </div>
+
+      <!-- Step 4: Contact + Summary -->
+      <div class="pform-step" id="pStep4">
+        <div class="pform-question">
+          <span>Paso 4 de 4 — Resumen</span>
+          Confirma tu solicitud
+        </div>
+        <div class="pform-summary" id="pformSummary">
+          <div class="summary-row">
+            <span class="sum-label">Servicio</span>
+            <span class="sum-val" id="sumService">—</span>
+          </div>
+          <div class="summary-row">
+            <span class="sum-label">Cantidad</span>
+            <span class="sum-val" id="sumQty">—</span>
+          </div>
+          <div class="summary-row">
+            <span class="sum-label">Plazo</span>
+            <span class="sum-val" id="sumTimeline">—</span>
+          </div>
+        </div>
+        <div class="pform-inputs">
+          <input type="text" id="pNombre" placeholder="Nombre completo" />
+          <input type="email" id="pEmail" placeholder="Correo electrónico" />
+          <input type="tel" id="pTel" placeholder="Teléfono de contacto" />
+        </div>
+        <div class="pform-nav" style="margin-top:1.2rem">
+          <button class="pform-next" data-submit>Enviar solicitud ✓</button>
+          <button class="pform-back" data-prev="3">← Atrás</button>
+        </div>
+      </div>
+
+    </div><!-- end pform-wrapper -->
+
+    <!-- Success -->
+    <div class="pform-success" id="pformSuccess">
+      <div class="success-icon">
+        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <h3>¡Solicitud enviada!</h3>
+      <p>Nos comunicaremos contigo en menos de 24 horas para coordinar los detalles de tu producción.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="footer-logo">
+    <svg viewBox="0 0 220 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <text x="0" y="38" font-family="'Barlow Condensed', sans-serif" font-weight="800"
+            font-size="40" letter-spacing="2" fill="rgba(255,255,255,0.5)">SOJOTE</text>
+      <g transform="translate(165,4)">
+        <rect x="0" y="0" width="10" height="10" fill="#a8944f" opacity=".5" transform="rotate(-45 5 5)"/>
+        <rect x="13" y="0" width="10" height="10" fill="#7a8e96" opacity=".5" transform="rotate(-45 18 5)"/>
+        <rect x="6" y="11" width="10" height="10" fill="#256068" opacity=".5" transform="rotate(-45 11 16)"/>
+        <rect x="19" y="11" width="10" height="10" fill="#a8944f" opacity=".35" transform="rotate(-45 24 16)"/>
+      </g>
+    </svg>
+  </div>
+  <p>© 2025 SOJOTEX S.A.C. — RUC 20614470039 — Lima, Perú</p>
+  <div class="footer-links">
+    <a href="#sobre">Nosotros</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+</footer>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
