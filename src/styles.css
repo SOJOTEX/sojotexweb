@@ -54,6 +54,12 @@ nav .logo-wrap svg {
   width: auto;
 }
 
+.logo-img {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+
 nav ul {
   display: flex;
   gap: 2.4rem;
@@ -258,6 +264,69 @@ h1 em {
   position: relative;
   width: 420px;
   height: 420px;
+}
+
+.hero-logo-wrap {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.2rem;
+  pointer-events: none;
+}
+
+.hero-logo-img {
+  width: min(260px, 70%);
+  height: auto;
+}
+
+.hero-logo-tag {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+  margin: 0;
+}
+
+.hero-stat-bar {
+  margin-top: 2rem;
+  display: flex;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(17, 32, 36, 0.8);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.hero-stat {
+  flex: 1;
+  padding: 1.6rem 0;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+}
+
+.hero-stat:last-child {
+  border-right: none;
+}
+
+.hero-stat .num {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(2.4rem, 4vw, 3rem);
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  color: var(--gold2);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.hero-stat .label {
+  font-size: 0.76rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.65);
+  display: block;
 }
 
 .machine-grid {
